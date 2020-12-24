@@ -66,5 +66,5 @@ async def on_message(message):
         # in this case don't respond with the word "Tutorial" or you will call the on_message event recursively
         await message.channel.send('This is that you want http://youtube.com/fazttech')
         await bot.process_commands(message)
-client.run('Nzg5MDkzMDUyMzYyMTI5NDY5.X9tCLA.odODoZTZwGAzgN4pvAxY83vZ-3w')
-bot.run('Nzg5MDkzMDUyMzYyMTI5NDY5.X9tCLA.odODoZTZwGAzgN4pvAxY83vZ-3w')
+client.run('NzkxNTQ1MjAxOTYwOTQzNjg2.X-Qt6g.VbTGLuy7_C6pCx4DF8o_z_iohAY')
+bot.run('NzkxNTQ1MjAxOTYwOTQzNjg2.X-Qt6g.VbTGLuy7_C6pCx4DF8o_z_iohAY')
