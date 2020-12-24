@@ -1,14 +1,43 @@
 import discord
 from discord.ext import commands
+from asyncio import sleep
+client = commands.Bot(command_prefix='-', help_command=None)
 
-client = commands.Bot(command_prefix = '.') 
-# Events
+
+async def status():
+    while True:
+        await client.wait_until_ready()
+        await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name='𝙇𝙄𝙏𝙀-𝙢𝙚𝙢𝙗𝙚𝙧𝙨'))
+        await sleep(1)
+        await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name='LITE-members'))
+        await sleep(1)
+        await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name='𝙇𝙄𝙏𝙀-𝙢𝙚𝙢𝙗𝙚𝙧𝙨'))
+        await sleep(1)
+        await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name='LITE-members'))
+        await sleep(1)
+        await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name='𝙇𝙄𝙏𝙀-𝙢𝙚𝙢𝙗𝙚𝙧𝙨'))
+        await sleep(1)
+        await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name='LITE-members'))
+        await sleep(1)
+        await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name='𝙇𝙄𝙏𝙀-𝙢𝙚𝙢𝙗𝙚𝙧𝙨'))
+        await sleep(1)
+        await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name='LITE-members'))
+        await sleep(1)
+        await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name='𝙇𝙄𝙏𝙀-𝙢𝙚𝙢𝙗𝙚𝙧𝙨'))
+        await sleep(1)
+        await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name='LITE-members'))
+        await sleep(1)
+        await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name='𝙇𝙄𝙏𝙀-𝙢𝙚𝙢𝙗𝙚𝙧𝙨'))
+        await sleep(1)
+        await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name='LITE-members'))
+        await sleep(1)
+        await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name='𝙇𝙄𝙏𝙀-𝙢𝙚𝙢𝙗𝙚𝙧𝙨'))
+        await sleep(1)
 @client.event
 async def on_ready():
-    await client.change_presence(status=discord.Status.online, activity=discord.Activity(
-        type=discord.ActivityType.watching, name="xnxx.com"
-            ))
-    print("Ready")
+    print(f'{client.user} has Awoken!')
+    await client.loop.create_task(status())
+
 
 import discord
 from discord.ext import commands
@@ -55,5 +84,5 @@ async def on_message(message):
         # in this case don't respond with the word "Tutorial" or you will call the on_message event recursively
         await message.channel.send('This is that you want http://youtube.com/fazttech')
         await bot.process_commands(message)
-client.run('NzkxNTQ1MjAxOTYwOTQzNjg2.X-Qt6g.VbTGLuy7_C6pCx4DF8o_z_iohAY')
-bot.run('NzkxNTQ1MjAxOTYwOTQzNjg2.X-Qt6g.VbTGLuy7_C6pCx4DF8o_z_iohAY')
+client.run('NzkxNTQ1MjAxOTYwOTQzNjg2.X-Qt6g.-BcbDNMgWptoSMgwLa0yqRJdKTY')
+bot.run('NzkxNTQ1MjAxOTYwOTQzNjg2.X-Qt6g.-BcbDNMgWptoSMgwLa0yqRJdKTY')
