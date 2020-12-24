@@ -1,1 +1,1 @@
-worker: python litexshotz.py
+worker: python lite.py
