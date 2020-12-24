@@ -1,25 +1,14 @@
 import discord
 from discord.ext import commands
-from asyncio import sleep
-client = commands.Bot(command_prefix='-', help_command=None)
 
-
-async def status():
-    while True:
-        await client.wait_until_ready()
-        await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name='Hengz Developer><'))
-        await sleep(5)
-        await client.change_presence(activity=discord.Game(name='LITE•XSHOT.com'))
-        await sleep(5)
-        await client.change_presence(activity=discord.Game(name='LITE Server!'))
-        await sleep(5)
-        await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name='Hentai.com><'))
-        
+client = commands.Bot(command_prefix = '.') 
+# Events
 @client.event
 async def on_ready():
-    print(f'{client.user} has Awoken!')
-    await client.loop.create_task(status())
-
+    await client.change_presence(status=discord.Status.online, activity=discord.Activity(
+        type=discord.ActivityType.watching, name="xnxx.com"
+            ))
+    print("Ready")
 
 import discord
 from discord.ext import commands
